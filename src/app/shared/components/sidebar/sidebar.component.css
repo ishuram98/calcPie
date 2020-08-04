@@ -4,5 +4,8 @@
   align-items: center;
   justify-content: center;
 }
+mat-card{
+  width: 80%;
+  margin: auto;
+}
 
-.buttonHolder{ text-align: center; }

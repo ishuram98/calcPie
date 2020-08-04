@@ -1,4 +1,4 @@
-import { ResultService } from './../../result.service';
+import { DashboardService } from 'src/app/modules/dashboard/dashboard.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -8,41 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  // @Input() in1: number;
-
-  // @Input() input1: number;
-  // @Input() input2: number;
-  // @Input() operatorChosen;
-
-  public result;
-
-  // @Input() props: { input1: number; input2: number; operatorChosen;};
-  constructor(private resService: ResultService) { }
+  pieChart = [];
+  constructor(private dashboardService: DashboardService) { }
 
   ngOnInit(): void {
-    this.resService.result$.subscribe(
-      (result) => {
-       this.result = result;
-    });
+    this.pieChart = this.dashboardService.pieChart();
+
   }
-
-
-
-  // evaluate(): void{
-  //   if (this.opChosen === '+') {
-  //     this.result = this.in1 + this.in2;
-  //     console.log(this.result);
-  // }
-  //   if (this.opChosen === '-') {
-  //   this.result = this.in1 - this.in2;
-  // }
-  //   if (this.opChosen === '*') {
-  // this.result = this.in1 * this.in2;
-  // }
-  //   if (this.opChosen === '/') {
-  // this.result = this.in1 / this.in2;
-  // }
-  // }
-
 
 }

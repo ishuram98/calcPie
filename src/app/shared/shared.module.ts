@@ -11,6 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule} from '@angular/forms';
+import { PieComponent } from './widgets/pie/pie.component';
+import {HighchartsChartModule} from 'highcharts-angular';
 
 
 @NgModule({
@@ -18,6 +20,7 @@ import { FormsModule} from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    PieComponent,
   ],
   imports: [
     CommonModule,
@@ -28,12 +31,14 @@ import { FormsModule} from '@angular/forms';
     FlexLayoutModule,
     MatMenuModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    HighchartsChartModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    PieComponent,
   ]
 })
 
