@@ -29,7 +29,6 @@ export class PieComponent implements OnInit{
        this.input1 = data.input1;
        this.input2 = data.input2;
        this.total = data.total;
-
        this.chartOptions = {
         chart: {
           plotBackgroundColor: null,
@@ -77,7 +76,14 @@ export class PieComponent implements OnInit{
           }]
         }],
       };
-    });
+       // tslint:disable-next-line: no-string-literal
+       console.log(this.chartOptions['series'][0].data[0]['y'], this.input2, this.total);
+       // tslint:disable-next-line: no-string-literal
+       console.log(this.chartOptions['series'][0].data[1]['y']);
+       // tslint:disable-next-line: no-string-literal
+       console.log(this.chartOptions['series'][0].data[2]['y']);
+    }
+    );
 
     HC_exporting(Highcharts);
 
