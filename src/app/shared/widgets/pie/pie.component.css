@@ -1,0 +1,14 @@
+.centrePosition{ text-align: center; }
+
+mat-card{
+  width:120px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.position {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

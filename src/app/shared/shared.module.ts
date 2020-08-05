@@ -11,8 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule} from '@angular/forms';
-import { PieComponent } from './widgets/pie/pie.component';
 import {HighchartsChartModule} from 'highcharts-angular';
+import { PieComponent } from './widgets/pie/pie.component';
 
 
 @NgModule({

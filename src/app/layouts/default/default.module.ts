@@ -9,9 +9,6 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 
-
-
-
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -24,7 +21,7 @@ import { MatCardModule } from '@angular/material/card';
     MatSidenavModule,
     MatDividerModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
   ]
 })
 export class DefaultModule { }
